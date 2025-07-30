@@ -26,7 +26,7 @@ def fetch_ticketmaster_html():
     # Attempt standard GET request
     get_resp = requests.get(url)
     print(f"[GET] Status: {get_resp.status_code}")
-    print("[GET] Length:", len(get_resp.text))
+    print("[GET] Response Snippet:", get_resp.text))
 
     # Attempt OPTIONS request
     options_resp = requests.options(url)
